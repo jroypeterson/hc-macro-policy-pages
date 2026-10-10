@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insurer Loss Ratios 2024</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf9f6;--ink:#141414;--muted:#6b6b6b;--rule:#e4e2dc;--band:#efede7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif}
+main{max-width:940px;margin:0 auto;padding:28px 16px 40px}
+.kick{font:600 12px 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#b03a2e;text-transform:uppercase}
+h1{font:700 clamp(24px,4.2vw,36px)/1.15 'Libre Caslon Text',Georgia,serif;margin:10px 0 12px;max-width:700px}
+.dek{font-size:15px;line-height:1.55;color:#3d3d3d;max-width:680px;margin:0 0 22px}
+.cap{font:12px 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#3d3d3d;text-transform:uppercase;margin:22px 0 10px}
+.row{display:grid;grid-template-columns:minmax(120px,230px) 1fr;align-items:center;min-height:41px;padding:0 8px}
+.row.total{background:var(--band);border-radius:4px}
+.co{font:400 16px 'Libre Caslon Text',Georgia,serif}
+.row.total .co{font-weight:700}
+.mem{font-size:11px;color:var(--muted)}
+.track,.axis{position:relative;height:41px;margin:0 58px 0 52px}
+.track{background:linear-gradient(to right,var(--rule) 1px,transparent 1px) 0 0/25% 100% repeat-x;border-right:1px solid var(--rule)}
+.zero{position:absolute;top:0;bottom:0;width:1px;background:#9a978f}
+.seg{position:absolute;top:50%;height:4px;margin-top:-2px;border-radius:2px}
+.dot{position:absolute;top:50%;width:13px;height:13px;margin:-6.5px 0 0 -6.5px;border-radius:50%}
+.dot.hollow{background:var(--bg);border:2px solid #555;width:12px;height:12px;margin:-6px 0 0 -6px}
+.lbl{position:absolute;top:50%;transform:translateY(-50%);font:11px 'IBM Plex Mono',monospace;white-space:nowrap;color:#444}
+.lbl.strong{font-weight:600;font-size:12.5px}
+.axis{height:22px;font:11px 'IBM Plex Mono',monospace;color:var(--muted)}
+.axis span{position:absolute;transform:translateX(-50%)}
+.foot{font:11.5px/1.6 'IBM Plex Mono',monospace;color:var(--muted);border-top:1px solid var(--rule);margin-top:18px;padding-top:12px}
+.foot a{color:var(--muted)}
+svg text{font-family:'IBM Plex Mono',monospace}
+table.t{border-collapse:collapse;font:12px 'IBM Plex Mono',monospace;margin-top:8px;width:100%}
+table.t td,table.t th{padding:3px 6px;text-align:right;border-bottom:1px solid var(--rule)}
+table.t th:first-child,table.t td:first-child{text-align:left}
+@media (max-width:560px){.row{grid-template-columns:105px 1fr}.co{font-size:13.5px}.track,.axis{margin:0 44px 0 40px}.lbl{font-size:10px}.lbl.strong{font-size:11px}}
+</style></head>
+<body><main>
+<div class="kick">Insurer loss ratios · commercial 2024 · Medicare 2023</div>
+<h1>Commercial claims took 87.0% of premium in 2024, up from 86.2%; the ratio rose at 5 of 7 big insurers.</h1>
+<p class="dek">Single-year adjusted incurred claims divided by earned premium across each parent&#x27;s individual, small-group and large-group filings, 2023 to 2024. A higher ratio is worse for the insurer, so rises are red. This is not the regulatory MLR, which pools up to three years. Medicare Advantage and Part D loss ratios are shown separately for 2023, the latest year CMS has published.</p>
+<div class="cap">Commercial claims / premium, 2023 to 2024 (single year, premium-weighted)</div>
+<div class="row total"><div><div class="co">All commercial issuers</div><div class="mem">$523B premium, 2024</div></div><div class="track"><span class="seg" style="left:65.45%;width:2.05%;background:#e6b0a9"></span><span class="dot hollow" style="left:65.45%"></span><span class="dot" style="left:67.50%;background:#b03a2e"></span><span class="lbl" style="right:calc(34.55% + 12px)">86.2%</span><span class="lbl strong" style="left:calc(67.50% + 12px);color:#b03a2e">87.0%</span></div></div>
+<div class="row"><div><div class="co">UnitedHealth (UNH)</div><div class="mem">$51.1B premium, 2024</div></div><div class="track"><span class="seg" style="left:45.71%;width:0.60%;background:#9fd3bf"></span><span class="dot hollow" style="left:46.31%"></span><span class="dot" style="left:45.71%;background:#0f7b5a"></span><span class="lbl strong" style="right:calc(54.29% + 12px);color:#0f7b5a">78.3%</span><span class="lbl" style="left:calc(46.31% + 12px)">78.5%</span></div></div>
+<div class="row"><div><div class="co">Elevance (ELV)</div><div class="mem">$49.1B premium, 2024</div></div><div class="track"><span class="seg" style="left:62.69%;width:0.33%;background:#e6b0a9"></span><span class="dot hollow" style="left:62.69%"></span><span class="dot" style="left:63.01%;background:#b03a2e"></span><span class="lbl" style="right:calc(37.31% + 12px)">85.1%</span><span class="lbl strong" style="left:calc(63.01% + 12px);color:#b03a2e">85.2%</span></div></div>
+<div class="row"><div><div class="co">Centene (CNC)</div><div class="mem">$29.0B premium, 2024</div></div><div class="track"><span class="seg" style="left:40.88%;width:4.23%;background:#e6b0a9"></span><span class="dot hollow" style="left:40.88%"></span><span class="dot" style="left:45.11%;background:#b03a2e"></span><span class="lbl" style="right:calc(59.12% + 12px)">76.4%</span><span class="lbl strong" style="left:calc(45.11% + 12px);color:#b03a2e">78.0%</span></div></div>
+<div class="row"><div><div class="co">CVS / Aetna (CVS)</div><div class="mem">$28.8B premium, 2024</div></div><div class="track"><span class="seg" style="left:55.08%;width:10.83%;background:#e6b0a9"></span><span class="dot hollow" style="left:55.08%"></span><span class="dot" style="left:65.91%;background:#b03a2e"></span><span class="lbl" style="right:calc(44.92% + 12px)">82.0%</span><span class="lbl strong" style="left:calc(65.91% + 12px);color:#b03a2e">86.4%</span></div></div>
+<div class="row"><div><div class="co">Cigna (CI)</div><div class="mem">$20.0B premium, 2024</div></div><div class="track"><span class="seg" style="left:62.37%;width:9.20%;background:#e6b0a9"></span><span class="dot hollow" style="left:62.37%"></span><span class="dot" style="left:71.56%;background:#b03a2e"></span><span class="lbl" style="right:calc(37.63% + 12px)">84.9%</span><span class="lbl strong" style="left:calc(71.56% + 12px);color:#b03a2e">88.6%</span></div></div>
+<div class="row"><div><div class="co">Oscar (OSCR)</div><div class="mem">$10.2B premium, 2024</div></div><div class="track"><span class="seg" style="left:15.26%;width:5.66%;background:#e6b0a9"></span><span class="dot hollow" style="left:15.26%"></span><span class="dot" style="left:20.92%;background:#b03a2e"></span><span class="lbl" style="right:calc(84.74% + 12px)">66.1%</span><span class="lbl strong" style="left:calc(20.92% + 12px);color:#b03a2e">68.4%</span></div></div>
+<div class="row"><div><div class="co">Molina (MOH)</div><div class="mem">$2.6B premium, 2024</div></div><div class="track"><span class="seg" style="left:25.12%;width:14.20%;background:#9fd3bf"></span><span class="dot hollow" style="left:39.32%"></span><span class="dot" style="left:25.12%;background:#0f7b5a"></span><span class="lbl strong" style="right:calc(74.88% + 12px);color:#0f7b5a">70.0%</span><span class="lbl" style="left:calc(39.32% + 12px)">75.7%</span></div></div>
+<div class="row"><div></div><div class="axis"><span style="left:0.00%">60%</span><span style="left:25.00%">70%</span><span style="left:50.00%">80%</span><span style="left:75.00%">90%</span><span style="left:100.00%">100%</span></div></div><div class="cap">Medicare Advantage + Part D MLR, 2023 (as reported, revenue-weighted)</div>
+<div class="row"><div><div class="co">UnitedHealth (UNH)</div><div class="mem">$172.9B revenue, 2023</div></div><div class="track"><span class="dot" style="left:72.72%;background:#14213d"></span><span class="lbl strong" style="right:calc(27.28% + 12px);color:#14213d">89.1%</span></div></div>
+<div class="row"><div><div class="co">Humana (HUM)</div><div class="mem">$97.0B revenue, 2023</div></div><div class="track"><span class="dot" style="left:77.53%;background:#14213d"></span><span class="lbl strong" style="right:calc(22.47% + 12px);color:#14213d">91.0%</span></div></div>
+<div class="row"><div><div class="co">CVS / Aetna (CVS)</div><div class="mem">$57.6B revenue, 2023</div></div><div class="track"><span class="dot" style="left:74.91%;background:#14213d"></span><span class="lbl strong" style="right:calc(25.09% + 12px);color:#14213d">90.0%</span></div></div>
+<div class="row"><div><div class="co">Elevance (ELV)</div><div class="mem">$34.2B revenue, 2023</div></div><div class="track"><span class="dot" style="left:79.07%;background:#14213d"></span><span class="lbl strong" style="right:calc(20.93% + 12px);color:#14213d">91.6%</span></div></div>
+<div class="row"><div><div class="co">Centene (CNC)</div><div class="mem">$28.5B revenue, 2023</div></div><div class="track"><span class="dot" style="left:71.99%;background:#14213d"></span><span class="lbl strong" style="right:calc(28.01% + 12px);color:#14213d">88.8%</span></div></div>
+<div class="row"><div><div class="co">Cigna (CI)</div><div class="mem">$14.8B revenue, 2023</div></div><div class="track"><span class="dot" style="left:76.59%;background:#14213d"></span><span class="lbl strong" style="right:calc(23.41% + 12px);color:#14213d">90.6%</span></div></div>
+<div class="row"><div><div class="co">Molina (MOH)</div><div class="mem">$2.1B revenue, 2023</div></div><div class="track"><span class="dot" style="left:78.15%;background:#14213d"></span><span class="lbl strong" style="right:calc(21.85% + 12px);color:#14213d">91.3%</span></div></div>
+<div class="row"><div><div class="co">Alignment (ALHC)</div><div class="mem">$1.7B revenue, 2023</div></div><div class="track"><span class="dot" style="left:74.56%;background:#14213d"></span><span class="lbl strong" style="right:calc(25.44% + 12px);color:#14213d">89.8%</span></div></div>
+<div class="row"><div><div class="co">Clover (CLOV)</div><div class="mem">$1.3B revenue, 2023</div></div><div class="track"><span class="dot" style="left:68.57%;background:#14213d"></span><span class="lbl strong" style="right:calc(31.43% + 12px);color:#14213d">87.4%</span></div></div>
+<div class="row"><div></div><div class="axis"><span style="left:0.00%">60%</span><span style="left:25.00%">70%</span><span style="left:50.00%">80%</span><span style="left:75.00%">90%</span><span style="left:100.00%">100%</span></div></div>
+<div class="foot">Source: CMS commercial MLR public use files, reporting years 2023–2024 (Part 3: adjusted incurred claims and earned premium, current year), and CMS Medicare Part C/D MLR data by contract (2023). Commercial claims are before risk-adjustment transfers, quality-improvement spending, taxes and rebates, so issuers that pay large risk-adjustment charges (Oscar, Molina) show low ratios here. Medicare MLRs are single-year with total revenue as the denominator. Rows: parents with over $1B commercial premium / $0.5B Medicare revenue; tickers use today's parent (Aetna counts as CVS in every year). CMS published no Medicare file for 2019–2020. Release cadence: once a year, around October. Built 2026-10-10 by hc_macro_policy.</div>
+</main></body></html>

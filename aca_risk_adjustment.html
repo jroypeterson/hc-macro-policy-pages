@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACA Risk Adjustment 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf9f6;--ink:#141414;--muted:#6b6b6b;--rule:#e4e2dc;--band:#efede7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif}
+main{max-width:940px;margin:0 auto;padding:28px 16px 40px}
+.kick{font:600 12px 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#b03a2e;text-transform:uppercase}
+h1{font:700 clamp(24px,4.2vw,36px)/1.15 'Libre Caslon Text',Georgia,serif;margin:10px 0 12px;max-width:700px}
+.dek{font-size:15px;line-height:1.55;color:#3d3d3d;max-width:680px;margin:0 0 22px}
+.cap{font:12px 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#3d3d3d;text-transform:uppercase;margin:22px 0 10px}
+.row{display:grid;grid-template-columns:minmax(120px,230px) 1fr;align-items:center;min-height:41px;padding:0 8px}
+.row.total{background:var(--band);border-radius:4px}
+.co{font:400 16px 'Libre Caslon Text',Georgia,serif}
+.row.total .co{font-weight:700}
+.mem{font-size:11px;color:var(--muted)}
+.track,.axis{position:relative;height:41px;margin:0 58px 0 52px}
+.track{background:linear-gradient(to right,var(--rule) 1px,transparent 1px) 0 0/25% 100% repeat-x;border-right:1px solid var(--rule)}
+.zero{position:absolute;top:0;bottom:0;width:1px;background:#9a978f}
+.seg{position:absolute;top:50%;height:4px;margin-top:-2px;border-radius:2px}
+.dot{position:absolute;top:50%;width:13px;height:13px;margin:-6.5px 0 0 -6.5px;border-radius:50%}
+.dot.hollow{background:var(--bg);border:2px solid #555;width:12px;height:12px;margin:-6px 0 0 -6px}
+.lbl{position:absolute;top:50%;transform:translateY(-50%);font:11px 'IBM Plex Mono',monospace;white-space:nowrap;color:#444}
+.lbl.strong{font-weight:600;font-size:12.5px}
+.axis{height:22px;font:11px 'IBM Plex Mono',monospace;color:var(--muted)}
+.axis span{position:absolute;transform:translateX(-50%)}
+.foot{font:11.5px/1.6 'IBM Plex Mono',monospace;color:var(--muted);border-top:1px solid var(--rule);margin-top:18px;padding-top:12px}
+.foot a{color:var(--muted)}
+svg text{font-family:'IBM Plex Mono',monospace}
+table.t{border-collapse:collapse;font:12px 'IBM Plex Mono',monospace;margin-top:8px;width:100%}
+table.t td,table.t th{padding:3px 6px;text-align:right;border-bottom:1px solid var(--rule)}
+table.t th:first-child,table.t td:first-child{text-align:left}
+@media (max-width:560px){.row{grid-template-columns:105px 1fr}.co{font-size:13.5px}.track,.axis{margin:0 44px 0 40px}.lbl{font-size:10px}.lbl.strong{font-size:11px}}
+</style></head>
+<body><main>
+<div class="kick">ACA risk adjustment · benefit year 2025</div>
+<h1>ACA risk adjustment for 2025: Oscar pays $2.43B, CVS / Aetna receives $603M.</h1>
+<p class="dek">Issuer-level transfers in the ACA individual and small-group markets, summed to each listed parent across all states. Biggest swing from 2024: CVS / Aetna, -$892M → +$603M. Transfers net to zero within each state market, so one insurer&#x27;s payment is its rivals&#x27; receipt.</p>
+<div class="cap">Net risk-adjustment transfer by parent, benefit year 2024 to 2025 (negative = pays in)</div>
+<div class="row"><div><div class="co">Oscar (OSCR)</div><div class="mem">2024: -$1.54B</div></div><div class="track"><span class="zero" style="left:75.00%"></span><span class="seg" style="left:14.32%;width:22.29%;background:#e6b0a9"></span><span class="dot hollow" style="left:36.61%"></span><span class="dot" style="left:14.32%;background:#b03a2e"></span><span class="lbl strong" style="right:calc(85.68% + 12px);color:#b03a2e">-$2.43B</span><span class="lbl" style="left:calc(36.61% + 12px)">-$1.54B</span></div></div>
+<div class="row"><div><div class="co">UnitedHealth (UNH)</div><div class="mem">2024: -$1.79B</div></div><div class="track"><span class="zero" style="left:75.00%"></span><span class="seg" style="left:30.29%;width:10.71%;background:#9fd3bf"></span><span class="dot hollow" style="left:30.29%"></span><span class="dot" style="left:41.00%;background:#0f7b5a"></span><span class="lbl" style="right:calc(69.71% + 12px)">-$1.79B</span><span class="lbl strong" style="left:calc(41.00% + 12px);color:#0f7b5a">-$1.36B</span></div></div>
+<div class="row"><div><div class="co">Molina (MOH)</div><div class="mem">2024: -$110M</div></div><div class="track"><span class="zero" style="left:75.00%"></span><span class="seg" style="left:65.07%;width:7.17%;background:#e6b0a9"></span><span class="dot hollow" style="left:72.24%"></span><span class="dot" style="left:65.07%;background:#b03a2e"></span><span class="lbl strong" style="right:calc(34.93% + 12px);color:#b03a2e">-$397M</span><span class="lbl" style="left:calc(72.24% + 12px)">-$110M</span></div></div>
+<div class="row"><div><div class="co">Cigna (CI)</div><div class="mem">2024: +$12M</div></div><div class="track"><span class="zero" style="left:75.00%"></span><span class="seg" style="left:75.31%;width:2.34%;background:#9fd3bf"></span><span class="dot hollow" style="left:75.31%"></span><span class="dot" style="left:77.65%;background:#0f7b5a"></span><span class="lbl" style="right:calc(24.69% + 12px)">+$12M</span><span class="lbl strong" style="left:calc(77.65% + 12px);color:#0f7b5a">+$106M</span></div></div>
+<div class="row"><div><div class="co">Elevance (ELV)</div><div class="mem">2024: +$73M</div></div><div class="track"><span class="zero" style="left:75.00%"></span><span class="seg" style="left:76.84%;width:3.07%;background:#9fd3bf"></span><span class="dot hollow" style="left:76.84%"></span><span class="dot" style="left:79.91%;background:#0f7b5a"></span><span class="lbl" style="right:calc(23.16% + 12px)">+$73M</span><span class="lbl strong" style="left:calc(79.91% + 12px);color:#0f7b5a">+$196M</span></div></div>
+<div class="row"><div><div class="co">Centene (CNC)</div><div class="mem">2024: +$551M</div></div><div class="track"><span class="zero" style="left:75.00%"></span><span class="seg" style="left:80.72%;width:8.05%;background:#e6b0a9"></span><span class="dot hollow" style="left:88.77%"></span><span class="dot" style="left:80.72%;background:#b03a2e"></span><span class="lbl strong" style="right:calc(19.28% + 12px);color:#b03a2e">+$229M</span><span class="lbl" style="left:calc(88.77% + 12px)">+$551M</span></div></div>
+<div class="row"><div><div class="co">CVS / Aetna (CVS)</div><div class="mem">2024: -$892M</div></div><div class="track"><span class="zero" style="left:75.00%"></span><span class="seg" style="left:52.69%;width:37.37%;background:#9fd3bf"></span><span class="dot hollow" style="left:52.69%"></span><span class="dot" style="left:90.06%;background:#0f7b5a"></span><span class="lbl" style="right:calc(47.31% + 12px)">-$892M</span><span class="lbl strong" style="left:calc(90.06% + 12px);color:#0f7b5a">+$603M</span></div></div>
+<div class="row"><div></div><div class="axis"><span style="left:0.00%">$-3.0B</span><span style="left:25.00%">$-2.0B</span><span style="left:50.00%">$-1.0B</span><span style="left:75.00%">$0.0B</span><span style="left:100.00%">$1.0B</span></div></div>
+<div class="foot">Source: CMS Summary Report on Permanent Risk Adjustment Transfers, issuer-level appendices C and D, benefit years 2024 and 2025 (555 issuers in 2025). Amounts as first reported (later data-validation adjustments excluded); high-cost risk pool payments excluded. Parents by issuer-name match using today's parent; non-public issuers (Blues plans, Kaiser) are not shown. Release cadence: once a year, around June 30, for the prior benefit year. Built 2026-10-10 by hc_macro_policy.</div>
+</main></body></html>
