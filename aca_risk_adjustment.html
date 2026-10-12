@@ -33,6 +33,16 @@ svg text{font-family:'IBM Plex Mono',monospace}
 table.t{border-collapse:collapse;font:12px 'IBM Plex Mono',monospace;margin-top:8px;width:100%}
 table.t td,table.t th{padding:3px 6px;text-align:right;border-bottom:1px solid var(--rule)}
 table.t th:first-child,table.t td:first-child{text-align:left}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));gap:14px;margin-top:8px}
+.tile{display:flex;flex-direction:column;gap:6px;background:#fff;border:1px solid var(--rule);border-radius:8px;padding:14px 16px;color:var(--ink);text-decoration:none}
+.tile:hover{border-color:#9a978f}
+.tile .tk{font:600 11px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.tile .tn{font:700 17px/1.25 'Libre Caslon Text',Georgia,serif}
+.tile .tv{display:flex;align-items:flex-end;justify-content:space-between;gap:10px}
+.tile .big{font:600 24px 'IBM Plex Mono',monospace;line-height:1}
+.tile .chg{font:12px 'IBM Plex Mono',monospace;margin-top:4px}
+.tile .why{font-size:12.5px;line-height:1.45;color:#3d3d3d}
+.tile .nx{font:11.5px 'IBM Plex Mono',monospace;color:var(--muted);margin-top:auto;padding-top:6px;border-top:1px solid var(--rule)}
 @media (max-width:560px){.row{grid-template-columns:105px 1fr}.co{font-size:13.5px}.track,.axis{margin:0 44px 0 40px}.lbl{font-size:10px}.lbl.strong{font-size:11px}}
 </style></head>
 <body><main>
@@ -48,5 +58,5 @@ table.t th:first-child,table.t td:first-child{text-align:left}
 <div class="row"><div><div class="co">Centene (CNC)</div><div class="mem">2024: +$551M</div></div><div class="track"><span class="zero" style="left:75.00%"></span><span class="seg" style="left:80.72%;width:8.05%;background:#e6b0a9"></span><span class="dot hollow" style="left:88.77%"></span><span class="dot" style="left:80.72%;background:#b03a2e"></span><span class="lbl strong" style="right:calc(19.28% + 12px);color:#b03a2e">+$229M</span><span class="lbl" style="left:calc(88.77% + 12px)">+$551M</span></div></div>
 <div class="row"><div><div class="co">CVS / Aetna (CVS)</div><div class="mem">2024: -$892M</div></div><div class="track"><span class="zero" style="left:75.00%"></span><span class="seg" style="left:52.69%;width:37.37%;background:#9fd3bf"></span><span class="dot hollow" style="left:52.69%"></span><span class="dot" style="left:90.06%;background:#0f7b5a"></span><span class="lbl" style="right:calc(47.31% + 12px)">-$892M</span><span class="lbl strong" style="left:calc(90.06% + 12px);color:#0f7b5a">+$603M</span></div></div>
 <div class="row"><div></div><div class="axis"><span style="left:0.00%">$-3.0B</span><span style="left:25.00%">$-2.0B</span><span style="left:50.00%">$-1.0B</span><span style="left:75.00%">$0.0B</span><span style="left:100.00%">$1.0B</span></div></div>
-<div class="foot">Source: CMS Summary Report on Permanent Risk Adjustment Transfers, issuer-level appendices C and D, benefit years 2024 and 2025 (555 issuers in 2025). Amounts as first reported (later data-validation adjustments excluded); high-cost risk pool payments excluded. Parents by issuer-name match using today's parent; non-public issuers (Blues plans, Kaiser) are not shown. Release cadence: once a year, around June 30, for the prior benefit year. Built 2026-10-10 by hc_macro_policy.</div>
+<div class="foot">Source: CMS Summary Report on Permanent Risk Adjustment Transfers, issuer-level appendices C and D, benefit years 2024 and 2025 (555 issuers in 2025). Amounts as first reported (later data-validation adjustments excluded); high-cost risk pool payments excluded. Parents by issuer-name match using today's parent; non-public issuers (Blues plans, Kaiser) are not shown. Release cadence: once a year, around June 30, for the prior benefit year. Built 2026-10-12 by hc_macro_policy.</div>
 </main></body></html>

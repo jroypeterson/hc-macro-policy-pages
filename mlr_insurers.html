@@ -33,6 +33,16 @@ svg text{font-family:'IBM Plex Mono',monospace}
 table.t{border-collapse:collapse;font:12px 'IBM Plex Mono',monospace;margin-top:8px;width:100%}
 table.t td,table.t th{padding:3px 6px;text-align:right;border-bottom:1px solid var(--rule)}
 table.t th:first-child,table.t td:first-child{text-align:left}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));gap:14px;margin-top:8px}
+.tile{display:flex;flex-direction:column;gap:6px;background:#fff;border:1px solid var(--rule);border-radius:8px;padding:14px 16px;color:var(--ink);text-decoration:none}
+.tile:hover{border-color:#9a978f}
+.tile .tk{font:600 11px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.tile .tn{font:700 17px/1.25 'Libre Caslon Text',Georgia,serif}
+.tile .tv{display:flex;align-items:flex-end;justify-content:space-between;gap:10px}
+.tile .big{font:600 24px 'IBM Plex Mono',monospace;line-height:1}
+.tile .chg{font:12px 'IBM Plex Mono',monospace;margin-top:4px}
+.tile .why{font-size:12.5px;line-height:1.45;color:#3d3d3d}
+.tile .nx{font:11.5px 'IBM Plex Mono',monospace;color:var(--muted);margin-top:auto;padding-top:6px;border-top:1px solid var(--rule)}
 @media (max-width:560px){.row{grid-template-columns:105px 1fr}.co{font-size:13.5px}.track,.axis{margin:0 44px 0 40px}.lbl{font-size:10px}.lbl.strong{font-size:11px}}
 </style></head>
 <body><main>
@@ -59,5 +69,5 @@ table.t th:first-child,table.t td:first-child{text-align:left}
 <div class="row"><div><div class="co">Alignment (ALHC)</div><div class="mem">$1.7B revenue, 2023</div></div><div class="track"><span class="dot" style="left:74.56%;background:#14213d"></span><span class="lbl strong" style="right:calc(25.44% + 12px);color:#14213d">89.8%</span></div></div>
 <div class="row"><div><div class="co">Clover (CLOV)</div><div class="mem">$1.3B revenue, 2023</div></div><div class="track"><span class="dot" style="left:68.57%;background:#14213d"></span><span class="lbl strong" style="right:calc(31.43% + 12px);color:#14213d">87.4%</span></div></div>
 <div class="row"><div></div><div class="axis"><span style="left:0.00%">60%</span><span style="left:25.00%">70%</span><span style="left:50.00%">80%</span><span style="left:75.00%">90%</span><span style="left:100.00%">100%</span></div></div>
-<div class="foot">Source: CMS commercial MLR public use files, reporting years 2023–2024 (Part 3: adjusted incurred claims and earned premium, current year), and CMS Medicare Part C/D MLR data by contract (2023). Commercial claims are before risk-adjustment transfers, quality-improvement spending, taxes and rebates, so issuers that pay large risk-adjustment charges (Oscar, Molina) show low ratios here. Medicare MLRs are single-year with total revenue as the denominator. Rows: parents with over $1B commercial premium / $0.5B Medicare revenue; tickers use today's parent (Aetna counts as CVS in every year). CMS published no Medicare file for 2019–2020. Release cadence: once a year, around October. Built 2026-10-10 by hc_macro_policy.</div>
+<div class="foot">Source: CMS commercial MLR public use files, reporting years 2023–2024 (Part 3: adjusted incurred claims and earned premium, current year), and CMS Medicare Part C/D MLR data by contract (2023). Commercial claims are before risk-adjustment transfers, quality-improvement spending, taxes and rebates, so issuers that pay large risk-adjustment charges (Oscar, Molina) show low ratios here. Medicare MLRs are single-year with total revenue as the denominator. Rows: parents with over $1B commercial premium / $0.5B Medicare revenue; tickers use today's parent (Aetna counts as CVS in every year). CMS published no Medicare file for 2019–2020. Release cadence: once a year, around October. Built 2026-10-12 by hc_macro_policy.</div>
 </main></body></html>
